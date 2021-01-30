@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        Home()
+//        Home()
+//        ScrollView(showsIndicators: false) {
+            TaskView()
+//        }
     }
 }
 

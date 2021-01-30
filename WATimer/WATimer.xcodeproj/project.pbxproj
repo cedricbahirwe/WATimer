@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8201DEF025C5E1EE00DD8B82 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8201DEEF25C5E1EE00DD8B82 /* TaskView.swift */; };
 		8206BC2525C3200A0004C68E /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8206BC2425C3200A0004C68E /* TimerViewModel.swift */; };
 		82EFD5A725C31EE600AF3E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFD5A625C31EE600AF3E71 /* AppDelegate.swift */; };
 		82EFD5A925C31EE600AF3E71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFD5A825C31EE600AF3E71 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8201DEEF25C5E1EE00DD8B82 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		8206BC2425C3200A0004C68E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		82EFD5A325C31EE600AF3E71 /* WATimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WATimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EFD5A625C31EE600AF3E71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				82EFD5A825C31EE600AF3E71 /* SceneDelegate.swift */,
 				82EFD5AA25C31EE600AF3E71 /* ContentView.swift */,
 				82EFD5BB25C31EF500AF3E71 /* Home.swift */,
+				8201DEEF25C5E1EE00DD8B82 /* TaskView.swift */,
 				8206BC2425C3200A0004C68E /* TimerViewModel.swift */,
 				82EFD5AC25C31EE700AF3E71 /* Assets.xcassets */,
 				82EFD5B125C31EE700AF3E71 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				8206BC2525C3200A0004C68E /* TimerViewModel.swift in Sources */,
 				82EFD5A725C31EE600AF3E71 /* AppDelegate.swift in Sources */,
 				82EFD5A925C31EE600AF3E71 /* SceneDelegate.swift in Sources */,
+				8201DEF025C5E1EE00DD8B82 /* TaskView.swift in Sources */,
 				82EFD5BC25C31EF500AF3E71 /* Home.swift in Sources */,
 				82EFD5AB25C31EE600AF3E71 /* ContentView.swift in Sources */,
 			);
