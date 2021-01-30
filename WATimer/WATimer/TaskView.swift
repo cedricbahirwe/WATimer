@@ -16,7 +16,7 @@ struct TaskView: View {
     var body: some View {
         ZStack {
             Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all)
-            VStack(alignment: .leading, spacing: 8) {
+            VStack(alignment: .leading, spacing: 28) {
                 
                 HStack {
                     Image(systemName: "chevron.left")
@@ -27,26 +27,27 @@ struct TaskView: View {
                     
                     Button(action: {}, label: {
                         Image(systemName: "ellipsis")
-                            .resizable()
+                            
                             .aspectRatio(contentMode: .fit)
                             .foregroundColor(.orange)
-                            .rotationEffect(.radians(.pi/2))
-                            .padding(8)
-                            .frame(width: 30, height: 30)
+                            .padding(.horizontal, 8)
+                            .frame(width: 40, height: 40)
                             .background(Color.white)
                             .cornerRadius(8)
+                            .rotationEffect(.radians(.pi/2))
                             .shadow(color: .offWhite, radius: 3, x: 0, y: 3)
+                        
                     })
                 }
                 VStack(alignment: .leading, spacing: -5) {
                     Text("Create")
                     Text("new task")
                 }
-                .font(.system(size: 32, weight: .bold))
+                .font(.system(size: 40, weight: .bold))
                 
                 VStack(alignment: .leading, spacing: 10) {
                     
-                    VStack(alignment: .leading, spacing: 0) {
+                    VStack(alignment: .leading, spacing: 5) {
                         Text("Task Title")
                             .foregroundColor(.gray)
                         TextField("Money App Design", text: .constant("Money App Design"))
@@ -158,7 +159,7 @@ struct TaskView: View {
                         .foregroundColor(.white)
                         .font(.system(size: 18, weight: .semibold))
                         .frame(maxWidth: .infinity)
-                        .frame(height: 48)
+                        .frame(height: 55)
                         .background(
                             LinearGradient(gradient: Gradient(colors: [Color.orange.opacity(0.5), Color.red.opacity(0.7), Color.red.opacity(0.7)]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
                         )
@@ -169,6 +170,7 @@ struct TaskView: View {
                 .padding(.top)
             }
             .padding()
+            .frame(maxHeight: .infinity, alignment: .top)
         }
 
     }
@@ -207,7 +209,7 @@ struct GridItem: View {
             }
         }
         .padding(10)
-        .frame(height: 60)
+        .frame(height: 65)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.white)
         .cornerRadius(10)

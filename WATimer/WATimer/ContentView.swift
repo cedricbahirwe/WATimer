@@ -11,9 +11,10 @@ struct ContentView: View {
     
     var body: some View {
 //        Home()
-//        ScrollView(showsIndicators: false) {
+        ScrollView(showsIndicators: false) {
             TaskView()
-//        }
+        }
+        .background(Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all))
     }
 }
 
