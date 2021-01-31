@@ -1,2 +1,2 @@
 # WATimer
-A small Timer & Reminder Concept with notifications, custmoizable widgets and intuitive layour
+A small Timer & Reminder Concept with notifications, customizable widgets and intuitive layout
