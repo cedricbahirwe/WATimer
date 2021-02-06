@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+        @Environment(\.scenePhase) var scenePhase
     var body: some View {
-//        Home()
+        //        Home()
         ScrollView(showsIndicators: false) {
             TaskView()
         }
