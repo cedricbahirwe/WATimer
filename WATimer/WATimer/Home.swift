@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-import  UserNotifications
+import UserNotifications
 
 
 struct Home: View {
     
     @EnvironmentObject var data: TimerData
-    
     
     var body: some View {
         ZStack {
@@ -154,5 +153,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .environmentObject(TimerData())
     }
 }

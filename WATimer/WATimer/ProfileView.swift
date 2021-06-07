@@ -42,8 +42,6 @@ struct ProfileView: View {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                         .shadow(color: .black, radius: 15, x: 0, y: 8)
-//                        .padding()
-//                        .background(Color(.secondarySystemBackground).clipShape(Circle()))
                         .padding(.top, -35)
                     VStack {
                         Text("Cédric Bahirwe")
@@ -55,7 +53,7 @@ struct ProfileView: View {
                     }
                     .padding()
                     
-                    HStack (spacing: 20) {
+                    HStack (spacing: 15) {
                         GridItem(title: "Task Done", subtitle: "26487", image: "line.horizontal.3")
                             .shadow(color: .offWhite, radius: 10, x: 0, y: 3)
                         
@@ -80,7 +78,7 @@ struct ProfileView: View {
                         .padding(10)
                         .frame(height: 65)
                         .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(Color(.secondarySystemBackground))
+                        .background(Color.white)
                         .cornerRadius(10)
                         .shadow(color: .offWhite, radius: 10, x: 0, y: 3)
                     }
@@ -88,8 +86,7 @@ struct ProfileView: View {
                     .padding(.horizontal)
                 }
                 .frame(maxWidth: .infinity)
-//                .frame(height: 220)
-                .background(Color.white.padding(.horizontal, -16).clipShape(Curved()))
+                .background(Color.white.clipShape(Curved()))
                 .padding(.top, 40)
                 .padding(.bottom, 45)
                 

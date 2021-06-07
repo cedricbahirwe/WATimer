@@ -11,10 +11,9 @@ struct ContentView: View {
         @Environment(\.scenePhase) var scenePhase
     var body: some View {
         //        Home()
-        ScrollView(showsIndicators: false) {
-            TaskView()
-        }
-        .background(Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all))
+        TaskView()
+        
+        
     }
 }
 
