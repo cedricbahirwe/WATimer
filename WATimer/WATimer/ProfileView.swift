@@ -142,7 +142,7 @@ struct ProfileView: View {
                 
                 Spacer()
                 
-                HStack(alignment: .bottom, spacing: 60) {
+                HStack(alignment: .bottom, spacing: 0) {
                     Image(systemName: "square.grid.2x2.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -150,6 +150,7 @@ struct ProfileView: View {
                         .frame(width: 30, height: 30)
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(5)
+                        .frame(maxWidth: .infinity)
                     Image(systemName: "calendar")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -157,8 +158,10 @@ struct ProfileView: View {
                         .frame(width: 30, height: 30)
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(5)
+                        .frame(maxWidth: .infinity)
                     Spacer()
-                    
+                        .frame(maxWidth: .infinity)
+                    Spacer().frame(width: 50)
                     
                     Image(systemName: "list.bullet.below.rectangle")
                         .resizable()
@@ -167,6 +170,7 @@ struct ProfileView: View {
                         .frame(width: 30, height: 30)
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(5)
+                        .frame(maxWidth: .infinity)
                     Image(systemName: "person.fill")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
@@ -174,9 +178,9 @@ struct ProfileView: View {
                         .frame(width: 30, height: 30)
                         .background(Color(.secondarySystemBackground))
                         .cornerRadius(5)
+                        .frame(maxWidth: .infinity)
                 }
                 .padding(.horizontal)
-                .padding(.top)
                 .foregroundColor(Color(.label))
                 .frame(height: 50, alignment: .center)
                 .frame(maxWidth: .infinity)
