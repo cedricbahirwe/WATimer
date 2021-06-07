@@ -12,15 +12,20 @@ struct ProfileView: View {
     var body: some View {
         ZStack {
             Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all)
-            VStack {
+            VStack(spacing: 0) {
                 HStack {
-                    Image(systemName: "chevron.left")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 15, height: 15)
-                        .onTapGesture {
-                            presentationMode.wrappedValue.dismiss()
-                        }
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+
+                    }) {
+                        Image(systemName: "chevron.left")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 15, height: 15)
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(.primary)
+                    }
+                    
                     Spacer()
                     Text("Profile")
                         .font(.system(size: 22, weight: .bold))
@@ -29,9 +34,9 @@ struct ProfileView: View {
                     Button(action: {}, label: {
                         Image(systemName: "ellipsis")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .scaledToFit()
                             .foregroundColor(.purple)
-                            .padding(.horizontal, 8)
+                            .padding(.horizontal, 10)
                             .frame(width: 40, height: 40)
                             .background(Color.white)
                             .cornerRadius(8)
@@ -46,8 +51,6 @@ struct ProfileView: View {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                         .shadow(color: .black, radius: 15, x: 0, y: 8)
-//                        .padding()
-//                        .background(Color(.secondarySystemBackground).clipShape(Circle()))
                         .padding(.top, -35)
                     VStack {
                         Text("Cédric Bahirwe")
@@ -92,7 +95,7 @@ struct ProfileView: View {
                     .padding(.horizontal)
                 }
                 .frame(maxWidth: .infinity)
-                .background(Color.white.clipShape(Curved()))
+                .background(Color(.systemBackground).clipShape(Curved()))
                 .padding(.horizontal,3)
                 .padding(.top, 40)
                 .padding(.bottom, 45)
@@ -206,7 +209,6 @@ struct ProfileView: View {
                     , alignment: .top
                 )
             }
-//            .padding([ .top, .horizontal])
         }
         .navigationTitle("")
         .navigationBarHidden(true)
