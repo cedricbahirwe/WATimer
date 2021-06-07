@@ -15,30 +15,33 @@ struct TaskView: View {
     @State private var showProfile: Bool = false
     var body: some View {
         NavigationView {
-            ScrollView(showsIndicators: false) {
-                ZStack {
-                    Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all)
-                    VStack(alignment: .leading, spacing: 28) {
+            
+            ZStack(alignment: .top) {
+                    Color(.secondarySystemBackground).ignoresSafeArea()
+                    
+                    HStack {
                         
-                        HStack {
-                            
-                            Spacer()
-                            
-                            NavigationLink(
-                                destination: ProfileView()) {
-                                Image(systemName: "ellipsis")
-                                    
-                                    .aspectRatio(contentMode: .fit)
-                                    .foregroundColor(.orange)
-                                    .padding(.horizontal, 8)
-                                    .frame(width: 40, height: 40)
-                                    .background(Color.white)
-                                    .cornerRadius(8)
-                                    .rotationEffect(.radians(.pi/2))
-                                    .shadow(color: .offWhite, radius: 3, x: 0, y: 3)
+                        Spacer()
+                        
+                        NavigationLink(
+                            destination: ProfileView()) {
+                            Image(systemName: "ellipsis")
                                 
-                            }
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.orange)
+                                .padding(.horizontal, 8)
+                                .frame(width: 40, height: 40)
+                                .background(Color.white)
+                                .cornerRadius(8)
+                                .rotationEffect(.radians(.pi/2))
+                                .shadow(color: .offWhite, radius: 3, x: 0, y: 3)
+                            
                         }
+                    }
+                    .zIndex(12)
+                    ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 28) {
+                       
                         VStack(alignment: .leading, spacing: -5) {
                             Text("Create")
                             Text("new task")
@@ -169,19 +172,20 @@ struct TaskView: View {
                         })
                         .padding(.top)
                     }
-                    .padding()
                     .frame(maxHeight: .infinity, alignment: .top)
+                    }
                 }
-            }
-            .background(Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all))
-            .sheet(isPresented: $showProfile) {
-                ProfileView()
+                .padding()
+
+                .background(Color(.secondarySystemBackground).ignoresSafeArea())
+                .sheet(isPresented: $showProfile) {
+                    ProfileView()
+                }
+                
+                .navigationTitle("")
+                .navigationBarHidden(true)
             }
             
-            .navigationTitle("")
-            .navigationBarHidden(true)
-        }
-        
     }
 }
 
