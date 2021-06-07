@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         ZStack {
             Color(.secondarySystemBackground).edgesIgnoringSafeArea(.all)
@@ -17,6 +18,9 @@ struct ProfileView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 15, height: 15)
+                        .onTapGesture {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     Spacer()
                     Text("Profile")
                         .font(.system(size: 22, weight: .bold))
