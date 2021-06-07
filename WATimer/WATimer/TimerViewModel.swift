@@ -24,7 +24,7 @@ class TimerData: NSObject, ObservableObject, UNUserNotificationCenterDelegate {
     @Published var leftTime: Date = Date()
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.sound, .alert]) // banner
+        completionHandler([.sound, .banner]) // banner
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {

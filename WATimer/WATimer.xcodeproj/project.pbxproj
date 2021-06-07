@@ -17,6 +17,7 @@
 		82EFD5B025C31EE700AF3E71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82EFD5AF25C31EE700AF3E71 /* Preview Assets.xcassets */; };
 		82EFD5B325C31EE700AF3E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EFD5B125C31EE700AF3E71 /* LaunchScreen.storyboard */; };
 		82EFD5BC25C31EF500AF3E71 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82EFD5BB25C31EF500AF3E71 /* Home.swift */; };
+		82F37225266EC11600B88078 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F37224266EC11600B88078 /* GridItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		82EFD5B225C31EE700AF3E71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82EFD5B425C31EE700AF3E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82EFD5BB25C31EF500AF3E71 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		82F37224266EC11600B88078 /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				82EFD5BB25C31EF500AF3E71 /* Home.swift */,
 				8201DEEF25C5E1EE00DD8B82 /* TaskView.swift */,
 				8201DEF425C5FD3A00DD8B82 /* ProfileView.swift */,
+				82F37224266EC11600B88078 /* GridItem.swift */,
 				8206BC2425C3200A0004C68E /* TimerViewModel.swift */,
 				82EFD5AC25C31EE700AF3E71 /* Assets.xcassets */,
 				82EFD5B125C31EE700AF3E71 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 				8201DEF025C5E1EE00DD8B82 /* TaskView.swift in Sources */,
 				82EFD5BC25C31EF500AF3E71 /* Home.swift in Sources */,
 				8201DEF525C5FD3A00DD8B82 /* ProfileView.swift in Sources */,
+				82F37225266EC11600B88078 /* GridItem.swift in Sources */,
 				82EFD5AB25C31EE600AF3E71 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

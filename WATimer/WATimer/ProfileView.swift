@@ -42,6 +42,8 @@ struct ProfileView: View {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                         .shadow(color: .black, radius: 15, x: 0, y: 8)
+//                        .padding()
+//                        .background(Color(.secondarySystemBackground).clipShape(Circle()))
                         .padding(.top, -35)
                     VStack {
                         Text("Cédric Bahirwe")
@@ -53,7 +55,7 @@ struct ProfileView: View {
                     }
                     .padding()
                     
-                    HStack (spacing: 15) {
+                    HStack (spacing: 10) {
                         GridItem(title: "Task Done", subtitle: "26487", image: "line.horizontal.3")
                             .shadow(color: .offWhite, radius: 10, x: 0, y: 3)
                         
@@ -87,12 +89,14 @@ struct ProfileView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .background(Color.white.clipShape(Curved()))
+                .padding(.horizontal,3)
                 .padding(.top, 40)
                 .padding(.bottom, 45)
                 
                 
                 
                 ScrollView(showsIndicators: false) {
+                    VStack {
                     ProfileRowItem(image: "stopwatch.fill", title: "Reminders", color: .blue)
                     
                     ProfileRowItem(image: "bell.fill", title: "Reminders", color: .orange)
@@ -130,6 +134,8 @@ struct ProfileView: View {
                     .frame(height: 60)
                     .background(Color.white)
                     .cornerRadius(8)
+                    }
+                    .padding(.horizontal, 4)
                     
                 }
                 .padding(.horizontal)
@@ -194,6 +200,10 @@ struct ProfileView: View {
             }
 //            .padding([ .top, .horizontal])
         }
+        .navigationTitle("")
+        .navigationBarHidden(true)
+        
+        
     }
 }
 
