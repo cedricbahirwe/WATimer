@@ -147,7 +147,6 @@ struct ProfileView: View {
                 }
                 .padding(.horizontal)
                 
-                Spacer()
                 
                 HStack(alignment: .bottom, spacing: 0) {
                     Image(systemName: "square.grid.2x2.fill")

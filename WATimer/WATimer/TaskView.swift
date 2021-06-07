@@ -21,10 +21,7 @@ struct TaskView: View {
                     VStack(alignment: .leading, spacing: 28) {
                         
                         HStack {
-                            Image(systemName: "chevron.left")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 15, height: 15)
+                            
                             Spacer()
                             
                             NavigationLink(
