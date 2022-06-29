@@ -53,22 +53,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
-        
-        
-        if data.time != 0 {
-            let diff = Date().timeIntervalSince(data.leftTime)
-            
-            
-            let currentTime  = data.selectedTime - Int(diff)
-            
-            if currentTime >= 0 {
-                withAnimation(.default) {
-                    data.selectedTime = currentTime
-                }
-            } else {
-                data.resetView()
-            }
-        }
+
+        data.checkTimerValidity()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -76,9 +62,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
         
-        data.leftTime = Date()
+        data.setLeftTime(Date())
     }
-
-
 }
 
