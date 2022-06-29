@@ -1,5 +1,5 @@
 # WATimer
-A small Timer & Reminder Concept with notifications, customizable widgets and intuitive layout
+A small Timer & Reminder Concept with notifications, and a beautiful mode adaptive UI
 
 Task View                  |  Profile View
 :-------------------------:|:-------------------------:
